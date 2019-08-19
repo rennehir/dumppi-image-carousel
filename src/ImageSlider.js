@@ -44,9 +44,17 @@ const ImageSlider = () => {
       {photos.map(photo => {
         const { id, image } = photo;
         return (
-          <div key={id}>
-            <img src={image.url} alt='' style={{ width: '100%' }} />
-          </div>
+          <div
+            key={id}
+            style={{
+              width: '100vw',
+              height: '100vh',
+              backgroundImage: `url(${image.url})`,
+              backgroundRepeat: 'no-repeat',
+              backgroundSize: 'contain',
+              backgroundPosition: 'center',
+            }}
+          />
         );
       })}
     </Carousel>
