@@ -1,0 +1,7 @@
+[build]
+  publish = "build"
+  command = "build"
+
+[[redirects]]
+  from = "/*"
+  to = "index.html"
